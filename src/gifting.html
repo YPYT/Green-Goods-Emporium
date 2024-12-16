@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Goods Emporium</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#header").load("header.html", function() {
+          onHeaderLoaded();
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <hr />
+    <div class="directory">
+      <a href="./index.html"><p>Home</p></a>
+      <p>/</p>
+      <p>Gifting</p>
+    </div>
+    <hr />
+    <main>
+      <!-- Title -->
+      <div>
+        <div class="page-top">
+          <h1>Gifts for your people</h1>
+          <img src="../img/gift-img.jpg" alt="about-img" class="page-img" />
+        </div>
+      </div>
+
+      <!-- About gift -->
+      <section>
+        <h2>Give Surprise</h2>
+        <div class="text-box">
+          <p class="page-text">
+            'Green Goods Emporium' is a place where you can respect nature and
+            make use of the wisdom of incorporating nature into your life to
+            achieve a comfortable, enjoyable and healthy lifestyle. Make people
+            and the environment happy with 'eco-friendly goods' as a gift to add
+            a little something to your life.
+          </p>
+        </div>
+      </section>
+
+      <!-- Top 5 gifts -->
+      <section>
+        <h3>Top 5 gifts</h3>
+        <div class="ranking-container">
+          <div class="top-gift">
+            <div class="trend-images">
+              <a href="./product.html" target="_blank">
+                <img src="../img/gifting1.jpg" alt="gift-img" />
+              </a>
+            </div>
+            <p class="trend-text"><strong>No.1</strong><br />Organic Cotton</p>
+          </div>
+          <div class="top-gift">
+            <div class="trend-images">
+              <a href="./product.html" target="_blank">
+                <img src="../img/gifting4.jpg" alt="gift-img" />
+              </a>
+            </div>
+            <p class="trend-text"><strong>No.2</strong><br />Wooden comb</p>
+          </div>
+          <div class="top-gift">
+            <div class="trend-images">
+              <a href="./product.html" target="_blank">
+                <img src="../img/skincare1.jpg" alt="gift-img" />
+              </a>
+            </div>
+            <p class="trend-text">
+              <strong>No.3</strong><br />Organic body oil
+            </p>
+          </div>
+          <div class="top-gift">
+            <div class="trend-images">
+              <a href="./product.html" target="_blank">
+                <img src="../img/skincare3.jpg" alt="gift-img" />
+              </a>
+            </div>
+            <p class="trend-text">
+              <strong>No.4</strong><br />Organic hair oil
+            </p>
+          </div>
+          <div class="top-gift">
+            <div class="trend-images">
+              <a href="./product.html" target="_blank">
+                <img src="../img/bodycare2.jpg" alt="gift-img" />
+              </a>
+            </div>
+            <p class="trend-text"><strong>No.5</strong><br />Body cream</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shop by Price -->
+      <section>
+        <h3>Shop by Price</h3>
+        <div class="container">
+          <button class="shop-button">
+            <a href="./shop.html" target="_blank" class="button-link"
+              >Gifts $35 & under</a
+            >
+          </button>
+          <button class="shop-button">
+            <a href="./shop.html" class="button-link">Gifts $70 & under</a>
+          </button>
+          <button class="shop-button">
+            <a href="./shop.html" target="_blank" class="button-link"
+              >Gifts over $70</a
+            >
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

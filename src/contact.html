@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Goods Emporium</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#header").load("header.html", function() {
+          onHeaderLoaded();
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <hr />
+    <div class="directory">
+      <a href="./index.html"><p>Home</p></a>
+      <p>/</p>
+      <p>Contact</p>
+    </div>
+    <hr />
+    <main>
+      <!-- Title -->
+      <div>
+        <div class="page-top">
+          <h1>Contact Us</h1>
+          <img src="../img/contact-img.jpg" alt="about-img" class="page-img" />
+        </div>
+      </div>
+
+      <!-- Contact email phone -->
+      <section class="contact-section">
+        <!-- text -->
+        <div class="contact-text">
+          <p>
+            If you're a member and wish to update your account information, or
+            update your payment details please log into your account
+            <a href="./login.html" class="highlight-link">here</a>.
+          </p>
+          <p>
+            If you have any other questions or feedbacks, please don't hesitate
+            to reach out by filling out the form below, email or phone us.
+          </p>
+        </div>
+        <div class="shop-contact">
+          <div class="contact-inf">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:hello@green.goods.emporium." class="highlight-link"
+              ><p>hello@green.goods.emporium.</p></a
+            >
+          </div>
+          <div class="contact-inf">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:1800 024 526" class="highlight-link"
+              ><p>1800 024 526</p></a
+            >
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form">
+          <form method="post" action="">
+            <input
+              type="text"
+              name="name"
+              id="contact-name"
+              placeholder="Name"
+              class="form-input"
+            />
+            <input
+              type="tel"
+              name="phone"
+              id="contact-phone"
+              placeholder="Phone Number"
+              class="form-input"
+            />
+            <input
+              type="email"
+              name="email"
+              id="contact-email"
+              placeholder="Email *"
+              class="form-input"
+              required
+            />
+            <select name="enquiry" id="contact-enquiry" class="form-input">
+              <option value="my-order">My Order</option>
+              <option value="feedback">Feedback</option>
+              <option value="gifts">Gifts</option>
+              <option value="other">Other</option>
+            </select>
+            <textarea
+              name="comment"
+              id="contact-comment"
+              rows="10"
+              placeholder="Comment"
+              class="form-input"
+            ></textarea>
+            <div class="submit-button">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

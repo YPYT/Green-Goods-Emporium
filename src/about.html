@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Goods Emporium</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#header").load("header.html", function() {
+          onHeaderLoaded();
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <hr />
+    <div class="directory">
+      <a href="./index.html"><p>Home</p></a>
+      <p>/</p>
+      <p>About</p>
+    </div>
+    <hr />
+    <main>
+      <!-- Title -->
+      <div class="page-top">
+        <h1>About Us</h1>
+        <img src="../img/skincare4.jpg" alt="about-img" class="page-img" />
+      </div>
+
+      <!-- Who We Are -->
+      <section>
+        <h2>Who We Are</h2>
+        <div class="text-box">
+          <p class="page-text">
+            Good things for people and nature. This thinking has now become a
+            natural part of our lives. There are now many organic and
+            sustainable products and ideas. However, living a lifestyle that
+            incorporates such things may seem a little too strict for us, who
+            struggle to get by in the modern world. We want to provide a
+            lifestyle where we can enjoy incorporating healthy and good things
+            into our lives, as we live in the future with many different faces.
+          </p>
+        </div>
+      </section>
+
+      <!-- Our Mission -->
+      <section class="col-container">
+        <div>
+          <h2>Our Mission</h2>
+          <p class="page-text">
+            To contribute to the achievement of global goals such as the Paris
+            Agreement and the SDGs through its business, in 2019, Green Goods
+            Emporium formulated its long-term environmental goal of 'Making
+            sustainable lifestyles more accessible'. In 2022, as countries
+            around the world moved to raise their targets, we updated its goal
+            to contribute to the achievement of carbon neutrality by 2050. We
+            will contribute to the realisation of a decarbonised society and a
+            resource-recycling society by promoting the creation of sustainable
+            lifestyles together with consumers, in other words, by providing
+            'earth-friendly lifestyles' and making lifestyles sustainable
+            without strain.
+          </p>
+        </div>
+        <img
+          src="../img/mission-img.jpg"
+          alt="mission-img"
+          class="content-img"
+        />
+      </section>
+      <!-- New arrival -->
+      <section>
+        <div>
+          <h2>New Products</h2>
+          <a href="./shop.html" class="text-link"><p>> Shop More</p></a>
+        </div>
+        <div class="img-container">
+          <a href="./product.html" target="_blank">
+            <img
+              src="../img/contact-img.jpg"
+              alt="sustainable-img"
+              class="small-img"
+          /></a>
+          <a href="./product.html" target="_blank">
+            <img
+              src="../img/skincare5.jpg"
+              alt="sustainable-img"
+              class="small-img"
+          /></a>
+
+          <a href="./product.html" target="_blank">
+            <img
+              src="../img/sustainable-img3.jpg"
+              alt="sustainable-img"
+              class="small-img"
+          /></a>
+
+          <a href="./product.html" target="_blank">
+            <img
+              src="../img/sustainable-img4.jpg"
+              alt="sustainable-img"
+              class="small-img"
+          /></a>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

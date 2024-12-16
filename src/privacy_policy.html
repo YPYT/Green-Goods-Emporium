@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Goods Emporium</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#header").load("header.html", function() {
+          onHeaderLoaded();
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <div id="header"></div>
+  <body>
+    <hr />
+    <div class="directory">
+      <a href="./index.html"><p>Home</p></a>
+      <p>/</p>
+      <p>Privacy Policy</p>
+    </div>
+    <hr />
+    <main>
+      <!-- Title -->
+      <section>
+        <h1>Privacy Policy</h1>
+      </section>
+
+      <!-- Returns Policy Contents -->
+      <section>
+        <div class="policy">
+          <p>Last Updated 14 December 2024</p>
+          <p>
+            We are fully aware that your personal information (name, address,
+            etc., information that can identify an individual) should be handled
+            with care in accordance with the principle of respect for the
+            individual, and we will strive to collect, use and protect it
+            appropriately, as well as to manage it strictly.
+          </p>
+
+          <div class="policy-content">
+            <strong class="policy-title"
+              >1. Acquisition of Personal Information</strong
+            >
+            <p>
+              When we ask for personal information from our customers, we will
+              clearly state the purpose for which it will be used, and will not
+              use it for any other purpose. We will also acquire personal
+              information in an appropriate manner, without deception or other
+              improper means.
+            </p>
+          </div>
+          <div class="policy-content">
+            <strong class="policy-title">2. Use of Personal Information</strong>
+            <p>
+              We will maintain the accuracy and currency of the personal
+              information we have acquired, and will use it within the scope
+              necessary to achieve the specified purpose of use.
+            </p>
+          </div>
+          <div class="policy-content">
+            <strong class="policy-title"
+              >3. Safe management of personal information</strong
+            >
+            <p>
+              Our company will take necessary and appropriate measures to
+              prevent the leakage, loss or damage of personal information
+              handled by us, and to ensure the safe management of personal
+              information.
+            </p>
+          </div>
+          <div class="policy-content">
+            <strong class="policy-title"
+              >4. Entrusting of personal information</strong
+            >
+            <p>
+              When entrusting the handling of personal information to a third
+              party, we will select a party that meets sufficient standards for
+              the protection of personal information, and will provide necessary
+              and appropriate supervision of the entrusted party to ensure safe
+              management.
+            </p>
+          </div>
+          <div class="policy-content">
+            <strong class="policy-title"
+              >5. Providing personal information to third parties</strong
+            >
+            <p>
+              Except in cases where the Personal Information Protection Law or
+              other laws and regulations require it, we will not provide
+              personal information to third parties without first obtaining the
+              consent of the individual concerned.
+            </p>
+          </div>
+          <div class="policy-content">
+            <strong class="policy-title"
+              >6. Disclosure, correction, etc. of personal information</strong
+            >
+            <p>
+              If the individual concerned requests the disclosure, correction,
+              or suspension of use of his or her personal information, we will
+              promptly take action after confirming the identity of the
+              individual concerned, except in cases where the law requires
+              otherwise.
+            </p>
+          </div>
+          <div class="policy-content">
+            <strong class="policy-title"
+              >7. Disposal of Personal Information</strong
+            >
+            <p>
+              We will dispose of personal information as quickly and safely as
+              possible once the period of time required by our company has
+              passed. If you have any requests or inquiries regarding the
+              handling of personal information by our company, please contact us
+              here.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

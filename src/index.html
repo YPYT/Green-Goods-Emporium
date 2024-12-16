@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Goods Emporium</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html", function() {
+          onHeaderLoaded();
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <div class="home-top">
+        <video autoplay muted loop id="bg_video">
+          <source src="../video/index_video.mp4" type="video/mp4" />
+        </video>
+        <h1>Welcome to Green Goods Emporium</h1>
+      </div>
+
+      <p class="page-text">
+        Our store offers a one-stop shop for environmentally friendly products.
+        We support sustainable living through a carefully selected range of
+        eco-friendly products. Discover gifts, essentials and ideas for a
+        greener life.
+      </p>
+
+      <!-- trending -->
+      <section class="trending">
+        <h3>Trending</h3>
+        <button class="pre-button">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button class="nxt-button">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <!-- trending card -->
+        <div class="trending-container">
+          <div class="trending-card">
+            <div class="trending-image">
+              <a href="./product.html" target="_blank">
+                <img src="../img/bodycare2.jpg" alt="badycream-image" />
+              </a>
+            </div>
+            <div class="item-info">
+              <p><strong>Natural Body Cream</strong></p>
+              <p class="short-description">regenerated cellulose fibre</p>
+              <span class="price">$20</span>
+            </div>
+          </div>
+          <div class="trending-card">
+            <div class="trending-image">
+              <a href="./product.html" target="_blank">
+                <img src="../img/candle1.jpg" alt="candle-image" />
+              </a>
+            </div>
+            <div class="item-info">
+              <p><strong>Candle (forest)</strong></p>
+              <p class="short-description">Feels like in the forest</p>
+              <span class="price">$22</span>
+            </div>
+          </div>
+
+          <div class="trending-card">
+            <div class="trending-image">
+              <a href="./product.html" target="_blank">
+                <img src="../img/gift-img.jpg" alt="gift-image" />
+              </a>
+            </div>
+            <div class="item-info">
+              <p><strong>Organic Cotton</strong></p>
+              <p class="short-description">100% organic cotton as a gift</p>
+              <span class="price">$10</span>
+            </div>
+          </div>
+
+          <div class="trending-card">
+            <div class="trending-image">
+              <a href="./product.html" target="_blank">
+                <img src="../img/skincare5.jpg" alt="skincare-image" />
+              </a>
+            </div>
+            <div class="item-info">
+              <p><strong>Skincare set (sakura)</strong></p>
+              <p class="short-description">
+                The most popular cherry blossom scent
+              </p>
+              <span class="price">$50</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <h3>Why Green Goods Emporium?</h3>
+        <div class="feature-container">
+          <div class="feature-top-image">
+            <img
+              src="../img/eco-friendly-products.jpg"
+              alt="eco-friendly-products-image"
+            />
+          </div>
+
+          <!-- Features -->
+          <!-- 1 -->
+          <div class="feature-item">
+            <div class="illustration">
+              <img
+                src="../Illustration/feature_Illustration2.png"
+                alt="feature-illustration"
+              />
+            </div>
+            <p>Sustainable Products</p>
+          </div>
+
+          <!-- 2 -->
+          <div class="feature-item">
+            <div class="illustration">
+              <img
+                src="../Illustration/feature_Illustration3.png"
+                alt="feature-illustration"
+              />
+            </div>
+            <p>High Quality</p>
+          </div>
+          <!-- 3 -->
+          <div class="feature-item">
+            <div class="illustration">
+              <img
+                src="../Illustration/feature_Illustration1.png"
+                alt="feature-illustration"
+              />
+            </div>
+            <p>Inspiring Change</p>
+          </div>
+          <!-- 4 -->
+          <div class="feature-item">
+            <div class="illustration">
+              <img
+                src="../Illustration/feature_Illustration4.png"
+                alt="feature-illustration"
+              />
+            </div>
+            <p>Community Impact</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Gifting</h3>
+        <div class="container">
+          <img
+            src="../img/gifting1.jpg"
+            alt="gifting-img"
+            class="section-img"
+          />
+        </div>
+        <p class="page-text">
+          We have a range of goods that are eco friendly but also high quality,
+          such as organic detergents that are highly effective at cleaning while
+          being good for the environment, and hand-made tableware that is
+          carefully crafted by artisans. Shop here for organic household goods
+          and sustainable daily items that are designed with your lifestyle.
+        </p>
+        <div class="container">
+          <a href="./gifting.html" target="_blank" class="text-link">
+            <button class="button-center-round">SHOP GIFTING</button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

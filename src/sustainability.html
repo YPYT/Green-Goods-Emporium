@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Goods Emporium</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#header").load("header.html", function() {
+          onHeaderLoaded();
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <hr />
+    <div class="directory">
+      <a href="./index.html"><p>Home</p></a>
+      <p>/</p>
+      <p>Sustainability</p>
+    </div>
+    <hr />
+    <main>
+      <!-- Title -->
+      <div>
+        <div class="page-top">
+          <h1>Sustainability</h1>
+          <img
+            src="../img/sustainable-img3.jpg"
+            alt="about-img"
+            class="page-img"
+          />
+        </div>
+      </div>
+
+      <!-- About Activity -->
+      <section>
+        <h2>Our Sustainable Activity</h2>
+        <p class="page-text">
+          Green Goods Emporium is a company that is highly regarded
+          internationally, having been selected for seven years in a row for the
+          Dow Jones Sustainability World Index, a leading global socially
+          responsible investment (SRI) index. We has also been at the cutting
+          edge of reducing environmental impact, such as by launching refillable
+          film containers in the 1990s. <br />
+          We introduce ideas, activities and products here that we are doing for
+          sustainable living.
+        </p>
+      </section>
+
+      <!-- Sustainability News -->
+      <section>
+        <div class="news-container">
+          <div class="news-article">
+            <h4>We start selling sustainable smart holders!</h4>
+            <p class="page-text">
+              Smart Holders are revolutionary products that make it unnecessary
+              to refill bottles. We are selling these products in countries
+              where the habit of refilling is not yet established, and are
+              promoting a reduction in environmental impact on a global scale.
+            </p>
+          </div>
+          <div class="news-article">
+            <h4>Film container recycling</h4>
+            <p class="page-text">
+              In relation to the recycling of film containers, made from
+              composite materials and difficult to recycle from container to
+              container, we are working to establish a system for collecting
+              them and jointly developing recycling technology. We are promoting
+              initiatives that transcend the boundaries of individual companies,
+              with the aim of accelerating the transition to a
+              resource-recycling society both in Japan and overseas.
+            </p>
+          </div>
+
+          <div class="news-article">
+            <h4>News from the shop</h4>
+            <p class="page-text">
+              In order to conserve our limited resources for the future, we have
+              stopped offering free paper shopping bags at the end of February
+              2024. We will continue to encourage customers to bring your
+              reusable bags. From March 1st we will offer eco-friendly bags made
+              from recycled cotton for a charge.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Goods Emporium</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#header").load("header.html", function() {
+          onHeaderLoaded();
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <div id="header"></div>
+  <body>
+    <main>
+      <hr />
+      <div class="directory">
+        <a href="./index.html"><p>Home</p></a>
+        <p>/</p>
+        <p>Returns Policy</p>
+      </div>
+      <hr />
+      <!-- Title -->
+      <section>
+        <h1>Returns Policy</h1>
+      </section>
+
+      <!-- Returns Policy Contents -->
+      <section>
+        <div class="policy">
+          <p>
+            In accordance with our refund policy, you can receive a refund
+            within 10 days of purchase:
+          </p>
+          <p>
+            1. If the product is different from the description given beforehand
+            <br />
+            2. If the quality of the product is extremely poor <br />
+            3. If the product cannot be delivered due to a fault
+          </p>
+
+          <p>
+            If any of the above apply to you, please contact us using the
+            contact form.
+          </p>
+          <p>
+            In other cases, depending on the circumstances, a refund may be
+            possible. However, please note that we do not offer refunds under
+            the following conditions.
+          </p>
+          <p>Cases where it is difficult to apply the refund policy:</p>
+
+          <p>
+            1. You have lost interest in the product due to a change of heart
+            <br />
+
+            2. You no longer need the product after purchasing it <br />
+
+            3. You purchased the product by mistake <br />
+            4. The product is not what you expected
+          </p>
+
+          <p>
+            All refunds will be made using the same method of payment as the
+            original purchase. Please note that all refunds will be made in the
+            same way as the original purchase. We do not accept returns for any
+            reason other than the above.
+          </p>
+          <p>
+            Other than this, we do not accept returns or exchanges for products,
+            except in the case of defective products.
+          </p>
+          <p>
+            Please make sure that the product you are planning to purchase is
+            the one you want before placing your order.
+          </p>
+          <p>
+            In the case of defective products, products subject to a
+            manufacturer's recall, or incorrect deliveries, we will replace the
+            product or refund the purchase price (in the case of products that
+            are no longer available, etc., we will not be able to replace the
+            product).
+          </p>
+          <p>
+            We do not accept returns or refunds for customer convenience after
+            shipment, but if you really want to, the following fees will be
+            charged. In that case, please note that we will not handle returns
+            or refunds if you send the product to our store without contacting
+            us.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

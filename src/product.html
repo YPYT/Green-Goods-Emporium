@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Goods Emporium</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#header").load("header.html", function() {
+          onHeaderLoaded();
+        });
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <div id="header"></div>
+  <body>
+    <hr />
+    <div class="directory">
+      <a href="./index.html"><p>Home</p></a>
+      <p>/</p>
+      <p>Product</p>
+    </div>
+    <hr />
+    <main>
+      <!-- Title -->
+      <section>
+        <h1>Product info</h1>
+      </section>
+
+      <!-- Product details -->
+      <div class="product-detail-card">
+        <div class="product-detail-img">
+          <a href="../img/candle1.jpg">
+            <img src="../img/candle1.jpg" alt="candle-image" />
+          </a>
+        </div>
+
+        <div class="product-details">
+          <div class="product-details-review">
+            <h6>Relax in the forest</h6>
+            <p>$47</p>
+            <div class="detail-review">
+              <div class="stars">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+              </div>
+              <a href="#" class="highlight-link"><p>5 Reviews</p></a>
+            </div>
+          </div>
+
+          <p class="item-description">
+            The name 'Relax in the forest' is a combination of the word
+            'forest', which expresses inspiration from the great outdoors, and
+            the word 'relax', which expresses the act of unwinding and relaxing.
+            This is a one-of-a-kind fragrance collection that expresses the
+            wisdom and inspiration gained from the great outdoors, scenery,
+            culture and history through scent.
+          </p>
+        </div>
+      </div>
+
+      <!-- Returns Policy Contents -->
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>
